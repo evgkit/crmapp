@@ -6,5 +6,6 @@ protected/data/*.db
 themes/classic/views/
 .idea/
 /vendor
-
 tests/_output/*
+composer.phar
+.vagrant/
