@@ -14,7 +14,7 @@ Vagrant.configure(2) do |config|
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "ubuntu/trusty32"
 
-  config.vm.provision :shell, :path => "bootstrap/01-prepare-precise64.sh"
+  # config.vm.provision :shell, :path => "bootstrap/01-prepare-precise64.sh"
   config.vm.provision :shell, :path => "bootstrap/02-configure-app-for-precise64.sh"
   config.vm.provision :shell, :path => "bootstrap/03-configure-app.sh"
 
@@ -72,4 +72,6 @@ Vagrant.configure(2) do |config|
   #   sudo apt-get update
   #   sudo apt-get install -y apache2
   # SHELL
+
+  config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
 end
