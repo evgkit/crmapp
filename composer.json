@@ -1,7 +1,18 @@
 {
+    "name": "crmapp - the awesome one",
+    "description": "Yii 2 Project",
+    "minimum-stability": "stable",
     "require": {
-        "codeception/codeception": "*",
-        "fzaninotto/faker": "*",
         "yiisoft/yii2": "*"
+    },
+    "require-dev": {
+        "codeception/codeception": "*",
+        "fzaninotto/faker": "*"
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
     }
 }

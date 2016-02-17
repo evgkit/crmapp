@@ -8,4 +8,5 @@ themes/classic/views/
 /vendor
 tests/_output/*
 composer.phar
+/web/assets
 .vagrant/
