@@ -5,7 +5,7 @@
 # Separately specified settings for database
 # NOTE that the password was already specified before in previous bootstrap script!
 DB_USER=root
-DB_PASS=mysqlroot
+DB_PASS=1
 DB_NAME=crmapp
 
 # Creating database

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # ^ This shebang is mandatory so we'll really use Bash. We need it in debconf-set-selections invocation below.
 #
-# This setup script is specifically for Ubuntu 12.04 "Precise" distro.
+# This setup script is specifically for Ubuntu 14.04 "Trusty" distro.
 # It will install the PHP 5.4-based LAMP stack with default versions of components.
 # Apache 2.x
 # MySql 5.x
@@ -11,12 +11,12 @@
 
 # Separately specified settings for database
 # NOTE that this password is specified again in next bootstrap script!
-DB_PASS=mysqlroot
+DB_PASS=1
 
 # We are going to install packages here
 apt-get update
 
-# We want PHP 5.4 on Ubuntu 12.04, adding PPA for it
+# We want PHP 5.4 on Ubuntu 14.04, adding PPA for it
 # See http://askubuntu.com/q/109404
 apt-get install -y python-software-properties
 add-apt-repository ppa:ondrej/php5

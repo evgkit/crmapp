@@ -4,7 +4,7 @@ return [
         'db' => [
             'dsn' => 'mysql:host=localhost;dbname=crmapp',
             'username' => 'root',
-            'password' => 'mysqlroot'
+            'password' => '1'
         ]
     ]
 ];

@@ -30,4 +30,5 @@ echo $form->field($phone, 'number');
 echo Html::submitButton('Submit', [
     'class' => 'btn btn-primary'
 ]);
+
 ActiveForm::end();
