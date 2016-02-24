@@ -46,4 +46,10 @@ class CRMOperatorSteps extends \AcceptanceTester
         $I->amOnPage('/customers');
     }
 
+    function seeCustomerInList($customer_data)
+    {
+        $I = $this;
+        $I->see($customer_data['CustomerRecord[name]'], '#search_results');
+    }
+
 }

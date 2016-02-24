@@ -10,6 +10,7 @@ $I->fillCustomerDataForm($first_customer);
 $I->submitCustomerDataForm();
 
 $I->seeIAmInListCustomersUi();
+$I->seeCustomerInList($first_customer);
 
 $I->amInAddCustomerUi();
 $second_customer = $I->imagineCustomer();
@@ -17,6 +18,8 @@ $I->fillCustomerDataForm($second_customer);
 $I->submitCustomerDataForm();
 
 $I->seeIAmInListCustomersUi();
+$I->seeCustomerInList($first_customer);
+$I->seeCustomerInList($second_customer);
 
 $I = new \Step\Acceptance\CRMUserSteps($scenario);
 $I->wantTo('query the customer info using his phone number');
