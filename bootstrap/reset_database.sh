@@ -15,4 +15,4 @@ mysql -u root -p1 -e "drop database if exists crmapp; create database crmapp def
 ./yii migrate --interactive=0
 
 # Make the SQL data dump for Codeception
-mysqldump -u root -pmysqlroot crmapp > tests/_data/dump.sql
+mysqldump -u root -p1 crmapp > tests/_data/dump.sql
