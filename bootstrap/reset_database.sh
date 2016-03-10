@@ -9,10 +9,10 @@
 mysql -u root -p1 -e "drop database if exists crmapp; create database crmapp default character set utf8 default collate utf8_unicode_ci";
 
 # Initialize the RBAC setup in empty database
-./yii migrate --interactive=0 --migrationPath='@yii/rbac/migrations'
+./../yii migrate --interactive=0 --migrationPath='@yii/rbac/migrations'
 
 # Run all our own migrations
-./yii migrate --interactive=0
+./../yii migrate --interactive=0
 
 # Make the SQL data dump for Codeception
-mysqldump -u root -p1 crmapp > tests/_data/dump.sql
+mysqldump -u root -p1 crmapp > ../tests/_data/dump.sql

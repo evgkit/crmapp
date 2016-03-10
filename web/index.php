@@ -12,5 +12,4 @@ require(__DIR__ . '/../vendor/yiisoft/yii2/Yii.php');
 // Получаем конфигурацию
 $config = require(__DIR__ . '/../config/web.php');
 
-// Ран Вася ран!
 (new yii\web\Application($config))->run();
